@@ -1,6 +1,6 @@
 # Rialo Cover: Intelligent Parametric Insurance
 
-Rialo Cover is a next-generation parametric insurance platform built on the Rialo/GenLayer ecosystem. It leverages **Intelligent Contracts** to automate the entire insurance lifecycle—from policy purchase to autonomous claim resolution—without the need for centralized oracles or manual intervention.
+Rialo Cover is a next-generation parametric insurance platform built on the Rialo/GenLayer ecosystem. It leverages **Intelligent Contracts** to automate the entire insurance lifecycle: from policy purchase to autonomous claim resolution, without the need for centralized oracles or manual intervention.
 
 ## Core Innovation: Intelligent Contracts
 
