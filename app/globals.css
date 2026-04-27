@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 47% 7%;
+  --foreground: 210 40% 98%;
+  --card: 224 48% 10%;
+  --card-foreground: 210 40% 98%;
+  --primary: 191 100% 58%;
+  --primary-foreground: 222 47% 7%;
+  --secondary: 226 35% 16%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 226 35% 16%;
+  --muted-foreground: 215 20% 72%;
+  --accent: 262 83% 66%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 218 35% 20%;
+  --input: 218 35% 20%;
+  --ring: 191 100% 58%;
+  --radius: 1rem;
+}
+
+* {
+  @apply border-border;
+}
+
+body {
+  @apply bg-background text-foreground antialiased;
+  min-height: 100vh;
+}
+
+body::before {
+  background:
+    radial-gradient(circle at 18% 12%, rgba(47, 198, 255, 0.18), transparent 28rem),
+    radial-gradient(circle at 88% 20%, rgba(168, 85, 247, 0.16), transparent 26rem),
+    linear-gradient(135deg, rgba(8, 13, 31, 0.98), rgba(11, 18, 40, 0.96));
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: -2;
+}
+
+body::after {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  content: "";
+  inset: 0;
+  opacity: 0.35;
+  pointer-events: none;
+  position: fixed;
+  z-index: -1;
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.3);
+}
